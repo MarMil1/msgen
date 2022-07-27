@@ -13,13 +13,35 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="gen-btn" onclick="masterFunction()"><a href="#msgs">New Message</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-
+    <section id="msgs" class="msgs">
+        <div id="msgs-title" class="msgs-title" onclick="masterFunction()">Random message</div>
+        <div class="msgs-body">
+            <div id="msgs-content" class="msgs-content">
+                Click a button to generate a message.
+            </div>
+        </div>
     </section>
+    <section id="about" class="about">
+        <div class="about-title">
+            About
+        </div>
+        <div class="about-content">
+            MsGen is a responsive random message generator built using HTML, CSS and vanilla JavaScript.
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                Copyright 2022 by Marko Milosavljevic. All Rights Reserved.
+            </div>
+            <div class="footer-logo"><a href="#msgs">MsGen</a></div>
+        </div>
+    </footer>
 </body>
-<script type="text/javascript" src="./index.html"></script>
+<script type="text/javascript" src="./index.js"></script>
 </html>
